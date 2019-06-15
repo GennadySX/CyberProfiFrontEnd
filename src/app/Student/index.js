@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import * as Actions from '&/redux/actions'
 import TestList from './studentTest/testList'
 import SubjectsList from './studentSubjects/subjectsList'
+import Header from '../Header';
 
 const styles = {
 }
@@ -47,6 +48,7 @@ class Student extends React.Component{
           <title>Личный кабинет</title>
           <meta name="description" content="Modern Web App - Home Page" />
         </Helmet>
+        <Header/>
         <h1>Личный кабинет ученика</h1>
         <div className="completedTests">
           <h2>Пройденные тесты</h2>

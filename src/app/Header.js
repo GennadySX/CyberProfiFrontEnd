@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const styles = {
   link: {
-    color: 'inherit'
+    color: 'inherit',
   },
   about:{
     textDecoration: 'none',
@@ -21,12 +21,12 @@ export default function Header() {
       <Toolbar>
         <Link to="/" style={styles.link}>
           <Typography variant="h5" color="inherit">
-            Modern Web App
+            Тренажер ГИА
           </Typography>
         </Link>
-        <Link to="/about" style={styles.about}>
+        <Link to="#" style={styles.about}>
           <Typography variant="h5" color="inherit">
-            About
+            Name
           </Typography>
         </Link>
       </Toolbar>
