@@ -5,7 +5,7 @@ import LoadableHOC from '&/LoadableHOC'
 const AsyncStudentPC = LoadableHOC({ loader: () => import('./Student/index.js') })
 const AsyncTest = LoadableHOC({ loader: () => import('./Test') })
 const AsyncResults = LoadableHOC({ loader: () => import('./TestPage/Results') })
-//const AsyncSignIn = LoadableHOC({ loader: () => import('./Autorization/signIn') })
+const AsyncSignIn = LoadableHOC({ loader: () => import('./Autorization/signIn') })
 //const AsyncSignUp = LoadableHOC({ loader: () => import('./Autorization/signUp') })
 
 
@@ -26,11 +26,12 @@ export default [
     component: AsyncResults,
     exact: true
   },
-  /*{
+  {
     path: '/signIn',
     component: AsyncSignIn,
     exact: true
   },
+  /*
   {
     path: '/signUp',
     component: AsyncSignUp,

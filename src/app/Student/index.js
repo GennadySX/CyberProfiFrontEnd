@@ -46,7 +46,7 @@ class Student extends React.Component{
       <div>
         <Helmet>
           <title>Личный кабинет</title>
-          <meta name="description" content="Modern Web App - Home Page" />
+          <meta name="description" content="Личный кабинет" />
         </Helmet>
         <Header/>
         <h1>Личный кабинет ученика</h1>
