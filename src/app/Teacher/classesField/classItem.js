@@ -4,7 +4,8 @@ import { Link } from '@material-ui/core';
 export default class ClassItem extends React.Component{
     render(){
         return(
-            <div className="classItem">
+            <div className="item-list">
+                <h2>{this.props.class}</h2>
                 <Link to='#'></Link>
             </div>
         )

@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as Actions from '&/redux/actions'
 import Header from '../Header';
+import ClassesField from './classesField/classesField'
 
 const styles = {
 }
@@ -34,7 +35,7 @@ class Teacher extends React.Component{
         <Header/>
         <h1>Личный кабинет учителя</h1>
         <div className="fieldOfClasses">
-          <ClassField class={classes}/>
+          <ClassesField class={classes}/>
         </div>
       </div>
     )
@@ -50,4 +51,4 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Student)
+)(Teacher)

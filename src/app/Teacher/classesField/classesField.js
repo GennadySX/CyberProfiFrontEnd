@@ -1,12 +1,12 @@
 import React from 'react'
-import classField from './classField';
+import ClassField from './classField';
 
-export default class classesField extends React.Component{
+export default class ClassesField extends React.Component{
     render(){
         return(
             <div>
                 {this.props.class.map(item=>{
-                    <classField class={item}/>
+                    <ClassField class={item}/>
                 })}
             </div>
         )

@@ -3,6 +3,7 @@ import { serverFetch as homeFetch } from '&/redux/serverFetch'
 
 import LoadableHOC from '&/LoadableHOC'
 const AsyncStudentPC = LoadableHOC({ loader: () => import('./Student/index.js') })
+const AsyncTeacherPC = LoadableHOC({ loader: () => import('./Teacher/index.js') })
 const AsyncTest = LoadableHOC({ loader: () => import('./Test') })
 const AsyncResults = LoadableHOC({ loader: () => import('./TestPage/Results') })
 const AsyncSignIn = LoadableHOC({ loader: () => import('./Autorization/signIn') })
@@ -31,6 +32,11 @@ export default [
     component: AsyncSignIn,
     exact: true
   },
+  {
+    path: '/teacher',
+    component: AsyncTeacherPC,
+    exact: true
+  }
   /*
   {
     path: '/signUp',
