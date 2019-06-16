@@ -4,7 +4,13 @@
     font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
 }
 
-.testItem{
-    border: 1px black solid;
+.item-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.list-item{
+    border: 1px solid black;
     padding: 2%;
+    border-radius: 10%;
 }

@@ -4,7 +4,7 @@ import SubjectItem from './subjectItem'
 export default class SubjectsList extends React.Component{
     render(){
         return(
-            <div>
+            <div className="item-container">
                 {this.props.subject.map(item => {
                 return <SubjectItem 
                         key={item.key}
